@@ -15,7 +15,6 @@ let descComparator = function(a, b) {
 
 
 let parametricSort = function(a, type) {
-    
     if (type == 'asc')
         return a.sort(ascComparator);
     else if (type == 'desc')

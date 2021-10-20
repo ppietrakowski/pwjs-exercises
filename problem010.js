@@ -1,7 +1,6 @@
 
 let deepCopy = function(arr) {
     var copy = [];
-    /* Schodzenie rekurencyjne do elementow */
     if (Array.isArray(arr)) {
         for (let i = 0; i < arr.length; i++) {
             copy[i] = deepCopy(arr[i]);
@@ -9,5 +8,6 @@ let deepCopy = function(arr) {
         return copy;
     }
 
+    // !Array.isArray(arr) -> element of array
     return arr;
 }

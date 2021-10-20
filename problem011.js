@@ -1,7 +1,7 @@
 
 let deepFindAndCount = function(arr, number) {
     let count = 0;
-    /* Schodzenie rekurencyjne do elementow */
+
     if (Array.isArray(arr)) {
         for (let i = 0; i < arr.length; i++) {
             count += deepFindAndCount(arr[i], number);
@@ -9,5 +9,6 @@ let deepFindAndCount = function(arr, number) {
         return count;
     }
 
+    // function has received number so check it for equality with number
     return arr === number ? 1 : 0;
 }
