@@ -1,5 +1,5 @@
 
-// adds to key from difference A from B
+// adds to keys array difference between A from B keys
 let keyDifference = function(keys, a, b) {
     for (keyA in a) {
         if (!b.hasOwnProperty(keyA)) {
