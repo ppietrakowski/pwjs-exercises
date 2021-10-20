@@ -1,4 +1,5 @@
 
+// adds to key a from symetric difference set
 let addOwnKeys = function(keys, a, b) {
     for (keyA in a) {
         if (!b.hasOwnProperty(keyA)) {
@@ -6,6 +7,8 @@ let addOwnKeys = function(keys, a, b) {
         }
     }
 }
+
+
 let objectsDiff = function(a, b) {
     let keys = []
     addOwnKeys(keys, a, b);

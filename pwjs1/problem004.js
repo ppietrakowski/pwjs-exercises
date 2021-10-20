@@ -1,6 +1,7 @@
 
 
-
+// todo: function should accept every positive year
+// maybe use date.getDay()
 let getTotalNumberOfNewYaersEveSundays = function(a, b) {
     const BASE_YEAR = 1905;
     let count = 0;
