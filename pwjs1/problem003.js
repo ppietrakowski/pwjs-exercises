@@ -1,6 +1,6 @@
-let isLeapYear = function(a) {
-    if (!Number.isInteger(a))
+let isLeapYear = function(year) {
+    if (!Number.isInteger(year))
         return false;
 
-    return (a % 4 == 0 && a % 100 != 0) || (a % 400 == 0);
+    return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);
 }
