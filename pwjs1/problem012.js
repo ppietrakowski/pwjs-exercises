@@ -1,5 +1,5 @@
 
-// adds to key a from symetric difference set
+// adds to key from symetric difference set of keys A and B
 let addOwnKeys = function(keys, a, b) {
     for (keyA in a) {
         if (!b.hasOwnProperty(keyA)) {
