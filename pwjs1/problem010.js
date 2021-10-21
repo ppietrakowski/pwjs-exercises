@@ -1,6 +1,6 @@
 
 let deepCopy = function(arr) {
-    var copy = [];
+    let copy = [];
     if (Array.isArray(arr)) {
         for (let i = 0; i < arr.length; i++) {
             copy[i] = deepCopy(arr[i]);
