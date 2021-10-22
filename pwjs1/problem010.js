@@ -1,13 +1,13 @@
 
-let deepCopy = function(arr) {
+let deepCopy = function(obj) {
     let copy = [];
-    if (Array.isArray(arr)) {
-        for (let i = 0; i < arr.length; i++) {
-            copy[i] = deepCopy(arr[i]);
+    if (Array.isArray(obj)) {
+        for (let i = 0; i < obj.length; i++) {
+            copy[i] = deepCopy(obj[i]);
         }
         return copy;
     }
 
-    // !Array.isArray(arr) -> element of array
-    return arr;
+    // !Array.isArray(obj) -> element of array
+    return obj;
 }
