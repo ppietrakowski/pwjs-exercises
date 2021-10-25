@@ -3,8 +3,8 @@ let deepFindAndCount = function(arr, number) {
     let count = 0;
 
     if (Array.isArray(arr)) {
-        for (let i = 0; i < arr.length; i++) {
-            count += deepFindAndCount(arr[i], number);
+        for (let obj of arr) {
+            count += deepFindAndCount(obj, number);
         }
         return count;
     }
