@@ -17,8 +17,8 @@ let Vectors = {
         if (!(Array.isArray(a)) || !(typeof b == 'number'))
             return false;
         
-        for (let i = 0; i < a.length; i++) {
-            c.push(a[i] * b);
+        for (value of a) {
+            c.push(value * b);
         }
         return c;
     }
