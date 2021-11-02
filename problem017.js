@@ -3,7 +3,7 @@ let countWords = function(words) {
         (dictionary, current) => { 
             if (!(current in dictionary))
                 dictionary[current] = 0;
-                dictionary[current]++;
+            dictionary[current]++;
             return dictionary;
         }, {});
 }
